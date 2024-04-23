@@ -1,1 +1,1 @@
-###Studi Grace a design project
+###Studio Grace a design project
