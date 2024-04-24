@@ -71,7 +71,29 @@
     text-align: center;
     box-shadow: 0 5px $btn_border;
     transition: background-color 0.3s ease;
+    
+    &:active {
+        transform: translateY(1px); 
+        transition: box-shadow 0.2s ease;
+        box-shadow: none;
+    }
 
+    &:focus {
+        outline: none;
+        position: relative;
+
+        &::before {
+            content: ""; 
+            position: absolute;
+            top: 10%; 
+            left: 10%;
+            width: 80%; 
+            height: 80%;
+            border: 3px groove $salmon; 
+            border-radius: 7px;
+            box-sizing: border-box; 
+        }
+    }
 }
 
 @mixin boxShadow(

@@ -80,8 +80,6 @@ p {
 
     &:active {
         background-color: $btn_primary_clicked;
-        transition: box-shadow 0.2s ease;
-        box-shadow: none;
     }
 }
 
@@ -100,8 +98,6 @@ p {
 
     &:active {
         background-color: $btn_secondary_clicked;
-        transition: box-shadow 0.2s ease;
-        box-shadow: none;
     }
 }
 
