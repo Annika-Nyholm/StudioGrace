@@ -1,0 +1,99 @@
+@mixin backgroundurl(
+    $Backgroundimageurl,
+    $Backgroundsizevalue,
+    $Backgroundrepeatvalue,
+    $Backgroundpositionvalue
+) {
+    background-image: $Backgroundimageurl;
+
+    @if $Backgroundsizevalue != none {
+        background-size: $Backgroundsizevalue;
+    }
+
+    @if $Backgroundrepeatvalue != none {
+        background-repeat: $Backgroundrepeatvalue;
+    }
+
+    @if $Backgroundpositionvalue != none {
+        background-position: $Backgroundpositionvalue;
+    }
+}
+
+@mixin buttonReset(
+    $backgroundColor,
+    $paddingValue,
+    $marginValue,
+    $borderValue,
+    $borderRadiusValue,
+    $colorValue
+) {
+    @if $backgroundColor == 'none' {
+        background-color: transparent;
+    } @else {
+        background-color: $backgroundColor;
+    }
+
+    @if $paddingValue == 'default' {
+        padding: 9px 23px;
+    } @else {
+        padding: $paddingValue;
+    }
+
+    @if $marginValue == 'default' {
+        margin: 0;
+    } @else {
+        margin: $marginValue;
+    }
+
+    @if $borderValue == 'default' {
+        border: 2px solid $btn_border;
+    } @else {
+        border: $borderValue;
+    }
+
+    @if $borderRadiusValue == 'default' {
+        border-radius: 7px;
+    } @else {
+        border-radius: $borderRadiusValue;
+    }
+
+    @if $colorValue == 'default' {
+        color: $btn_text;
+    } @else {
+        color: $colorValue;
+    }
+
+    cursor: pointer;
+    min-height: 40px;
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 22px;
+    text-align: center;
+    box-shadow: 0 5px $btn_border;
+    transition: background-color 0.3s ease;
+
+}
+
+@mixin boxShadow(
+    $dropShadow,
+    $offsetX,
+    $offsetY,
+    $blurRadius,
+    $spreadRadius,
+    $color
+) {
+    @if $dropShadow == 'button' {
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
+    }
+    @if $dropShadow == 'header' {
+        box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @if $dropShadow == 'input' {
+        box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @if $dropShadow == 'product' {
+        box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    } @else {
+        box-shadow: $offsetX, $offsetY, $blurRadius, $spreadRadius, $color;
+    }
+}

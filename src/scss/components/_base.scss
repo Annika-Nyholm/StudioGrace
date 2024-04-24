@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: $font_type;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: $h1_color;
+    font-style: italic;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: $h2_dark;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    color: $h3_color;
+
+}
+
+h4, 
+h5, 
+h6 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 18px;
+    letter-spacing: -0.8px;
+}
+
+a {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: $a_light;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.125rem;
+    color: $text_light;
+    font-weight: 400;
+}
+
+.btn_primary {
+    @include buttonReset(
+        $btn_primary_default,
+    default,
+    default,
+    default,
+    default,
+    $btn_text);
+    
+    &:hover {
+        background-color: $btn_primary_hover;
+    }
+
+    &:active {
+        background-color: $btn_primary_clicked;
+        transition: box-shadow 0.2s ease;
+        box-shadow: none;
+    }
+}
+
+.btn_secondary {
+    @include buttonReset(
+        $btn_secondary_default,
+    default,
+    default,
+    default,
+    default,
+    $btn_text);
+    
+    &:hover {
+        background-color: $btn_secondary_hover;
+    }
+
+    &:active {
+        background-color: $btn_secondary_clicked;
+        transition: box-shadow 0.2s ease;
+        box-shadow: none;
+    }
+}
+

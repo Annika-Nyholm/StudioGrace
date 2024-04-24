@@ -1,0 +1,47 @@
+// Primary colors  
+$dark_pine: #365243;  
+$mint_condition: #E8E8E8;  
+$flamingo: #F49C98;
+
+// Secondary colors
+$burnt_yellow: #FCD68F;  
+$salmon: #F1C2A6;  
+$onyx: #1E1E1E;  
+$green_pea: #629076;
+
+$background_grey: $mint_condition;
+$background_yellow: $burnt_yellow;
+$background_green: $dark_pine;
+$background_pink: $flamingo;
+
+$h2_light: $green_pea;
+$h2_dark: $dark_pine;
+$h1_color: $dark_pine;             
+$h3_color: $mint_condition;
+
+$btn_primary_default: $burnt_yellow;
+$btn_primary_hover: $flamingo;
+$btn_primary_clicked: $flamingo;
+$btn_secondary_default:$flamingo;
+$btn_secondary_hover: $salmon;
+$btn_secondary_clicked: $salmon;
+$btn_disabled: transparent;
+   $btn_text: $onyx;
+$btn_border: $onyx;
+
+$a_dark: $dark_pine;
+$a_light: $mint_condition;
+
+$input_bg: transparent;
+$input_bg_hoverfocus_light: $mint_condition;
+$input_bg_hoverfocus_dark: $dark_pine;
+$input_border_dark: $dark_pine;
+$input_border_light: $mint_condition;
+$input_text_dark: $dark_pine;
+$input_text_light: $mint_condition;
+
+
+$text_dark: $dark_pine;
+$text_light: $mint_condition;
+
+$font_type: 'Inter', sans-serif;

@@ -1,3 +1,6 @@
-body {
-    background-color: aquamarine;
-}
+@import './src/scss/components/variables';
+@import './src/scss/components/mixins';
+@import './src/scss/components/base';
+
+
+@import './src/scss/style/mobile';
