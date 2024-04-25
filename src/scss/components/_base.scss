@@ -65,6 +65,14 @@ p {
     font-weight: 400;
 }
 
+input {
+    background-color: $input_bg;
+    border: 3px solid $input_border_dark;
+    border-radius: 16px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
 .btn_primary {
     @include buttonReset(
         $btn_primary_default,
@@ -98,6 +106,41 @@ p {
 
     &:active {
         background-color: $btn_secondary_clicked;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_bg {
+    position: relative;
+    background-color: $background_green;
+    img {
+        opacity: 10%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

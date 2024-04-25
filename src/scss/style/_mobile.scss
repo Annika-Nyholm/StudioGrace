@@ -1,3 +1,36 @@
 body {
     background-color: $background_grey;
 }
+
+header {
+    position: relative;
+    height: 567px;
+    @include backgroundurl(
+    url(/background-header/background-header.png),
+    cover,
+    no-repeat,
+    center center);
+
+    img {
+        position: absolute;
+        top: 62px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu_btn {
+        border: none;
+        position: absolute;
+        top: 291px;
+        left: 53%;
+        transform: translateX(53%);
+        width: 92px;
+        height: 58px;
+        @include backgroundurl(
+        url( public/menu/menu.png),
+        cover,
+        no-repeat,
+        center center);
+    }
+
+}
