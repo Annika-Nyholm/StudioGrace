@@ -1,5 +1,6 @@
 body {
     background-color: $background_grey;
+    margin: 0;
 }
 
 header {
@@ -27,10 +28,92 @@ header {
         width: 92px;
         height: 58px;
         @include backgroundurl(
-        url( public/menu/menu.png),
+        url(/menu/menu.png),
+        cover,
+        no-repeat,
+        center center);
+        cursor: pointer;
+    }
+}
+
+.first_page {
+    position: relative;
+    background-color: $background_yellow;
+    border-radius: 100px 0 0 0;
+    padding-top: $space_between_boxes;
+    padding-bottom: $space_between_boxes;
+
+    .first_curve {
+        width: 154px;
+        height: 120px;
+        @include backgroundurl(
+        url(/section-curve/curveSVG.svg),
+        cover,
+        no-repeat,
+        center center);
+        position: absolute;
+        right: 0;
+        top: -120px;
+    }
+
+    .welcome_container {
+        position: relative;
+        height: 281px;
+        margin-left: 40px;
+        background-color: $background_white;
+        border-radius: 100px 0 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .welcome_curve {
+            width: 175px;
+            height: 136px;
+            @include backgroundurl(
+            url(/section-curve/curveLight.svg),
+            cover,
+            no-repeat,
+            center center);
+            position: absolute;
+            right: 0;
+            top: -136px;
+        }
+
+        h1 {
+            width: 218px;
+            height: 162px;
+            text-align: end;
+        }
+    }
+
+    .couch_container {
+        margin-top: $space_between_boxes;
+        position: relative;
+        left: -86px;
+        width: $box_width;
+        height: 315px;
+        border: 10px solid $border_white;
+        border-radius: 0 30px 30px 0;
+        @include backgroundurl(
+        url(/images/martin-pechy-couch.webp),
         cover,
         no-repeat,
         center center);
     }
 
+    .text_info {
+        margin-top: $space_between_boxes;
+        background-color: $background_green;
+        position: relative;
+        margin-left: $space_between_boxes;
+        border: 10px solid $border_white;
+        border-radius: 30px 0 0 30px;
+        border-right: 0px;
+        padding: 30px;
+
+        p {
+            max-width: 400px;
+            height: auto;
+        }
+    }
 }
