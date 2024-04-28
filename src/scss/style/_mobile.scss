@@ -40,6 +40,7 @@ header {
     position: relative;
     background-color: $background_yellow;
     border-radius: 100px 0 0 0;
+    border-bottom: 10px solid $border_white;
     padding-top: $space_between_boxes;
     padding-bottom: $space_between_boxes;
 
@@ -62,9 +63,7 @@ header {
         margin-left: 40px;
         background-color: $background_white;
         border-radius: 100px 0 0 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenterCenter();
 
         .welcome_curve {
             width: 175px;
@@ -115,5 +114,74 @@ header {
             max-width: 400px;
             height: auto;
         }
+    }
+}
+
+.second_page {
+    position: relative;
+    padding: 75px 0 115px 0;
+    background-color: $background_green;
+    background-image: 
+    url(/background-pattern/boxpattern.png);
+    background-blend-mode: overlay; 
+    //background-blend-mode: soft-light;
+    background-repeat: repeat;
+    background-size: 40%;
+    @include flexCenterCenter(column);
+    
+    .img_gallery {
+        position: relative;
+        @include flexCenterCenter(column);
+        top: 75px;
+        width: 340px;
+        padding: 108px 0 45px 0;
+        background-color: $background_green;
+        gap: $space_between_boxes;
+    
+        h2 {
+            position: absolute;
+            top: -40px;
+            left: 20px;
+            z-index: 1;
+    
+            .split_text {
+                display: block;
+            }
+    
+            .italic {
+                font-style: italic;
+            }
+        }
+
+        .tape {
+            height: 28px;
+            width: 114px;
+            display: inline-block;
+            background-color: $background_pink;
+            position: absolute;
+        }
+
+        .tape_one {
+            top: 580px;
+            left: 4px;
+
+        }
+
+        .tape_two {
+            width: 77px;
+            background-color: $background_green;
+            top: 650px;
+            right: -6px;
+        }
+
+        .tape_three {
+            bottom: 30px;
+        }
+    }
+
+    button {
+        position: relative;
+        top: 90px;
+        
     }
 }
