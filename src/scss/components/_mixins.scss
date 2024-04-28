@@ -119,3 +119,13 @@
         box-shadow: $offsetX, $offsetY, $blurRadius, $spreadRadius, $color;
     }
 }
+
+@mixin flexCenterCenter($flexdirection: row) {
+    @if $flexdirection == 'column' {
+        flex-direction: column;
+    }
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
