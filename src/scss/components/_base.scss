@@ -16,26 +16,29 @@ a {
 
 h1 {
     font-size: 2.5rem;
-    color: $h1_color;
+    color: $h1_light;
     font-style: italic;
     font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 5rem;
     font-weight: 900;
-    letter-spacing: -0.8px;
-    line-height: 80px;
+    letter-spacing: -0.4px;
+    line-height: 5rem;
     text-transform: uppercase;
-    color: $h2_dark;
+    color: $h2_color;
 }
 
 h3 {
     font-size: 1.25rem;
     font-weight: 900;
     font-style: italic;
-    line-height: 20px;
-    letter-spacing: -0.8px;
+    line-height: 1.25px;
+    letter-spacing: -0.4px;
     text-transform: uppercase;
     color: $h3_color;
 
@@ -46,9 +49,9 @@ h5,
 h6 {
     font-weight: 700;
     font-style: italic;
-    font-size: 1.25rem;
-    line-height: 18px;
-    letter-spacing: -0.8px;
+    font-size: 1.125rem;
+    line-height: 1.125px;
+    letter-spacing: -0.4px;
 }
 
 a {
@@ -61,8 +64,30 @@ a {
 
 p {
     font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.4px;
     color: $text_light;
     font-weight: 400;
+}
+
+.faded_text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: -0.8px;
+}
+
+.short_text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.875;
+    letter-spacing: -0.8px;
+}
+
+.quote_text {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.8px;
+    font-style: italic;
 }
 
 input {
