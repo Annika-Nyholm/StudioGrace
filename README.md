@@ -18,10 +18,15 @@ As a font we chose the font Inter which is pretty rounded and well suited for sc
 
 In our design layout we have attempted to create a natural flow between all elements, striving to implement images into our clear and distinct design and showcasing our business whilst still maintaining the aesthetic of our initial idea. We believe we have achieved the desired playfulness of our aesthetic, unveiling our brand identity.
 
-# Designed by
+### Designed by
 
 - [@tsemitris](https://github.com/tsemitris)
 - [@olandstorm](https://github.com/olandstorm)
 - [@alahojat](https://www.github.com/alahojat)
 - [@Annika-Nyholm](https://github.com/Annika-Nyholm)
+
+### Coded by
+
+- [@Annika-Nyholm](https://github.com/Annika-Nyholm)
+
 
