@@ -1,4 +1,4 @@
-## This project is in process
+## This project is in progress
 
 # Studio Grace a design project
 
