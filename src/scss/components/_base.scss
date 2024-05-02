@@ -9,6 +9,7 @@ h4,
 h5,
 h6,
 p,
+span,
 a {
     font-family: $font_type;
 }
@@ -70,6 +71,14 @@ p {
     font-weight: 400;
 }
 
+.split_text {
+    display: block;
+}
+
+.italic {
+    font-style: italic;
+}
+
 .faded_text {
     font-weight: 400;
     font-size: 0.875rem;
@@ -88,6 +97,18 @@ p {
     font-size: 1.5rem;
     letter-spacing: -0.8px;
     font-style: italic;
+}
+
+.quote {
+    color: $text_light;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+}
+
+.quote_end {
+    transform: rotate(180deg);
 }
 
 input {

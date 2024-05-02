@@ -132,7 +132,6 @@ header {
     .img_gallery {
         position: relative;
         @include flexCenterCenter(column);
-        top: 75px;
         width: 340px;
         padding: 108px 0 45px 0;
         background-color: $background_green;
@@ -143,14 +142,6 @@ header {
             top: -40px;
             left: 20px;
             z-index: 1;
-    
-            .split_text {
-                display: block;
-            }
-    
-            .italic {
-                font-style: italic;
-            }
         }
 
         .tape {
@@ -164,7 +155,6 @@ header {
         .tape_one {
             top: 580px;
             left: 4px;
-
         }
 
         .tape_two {
@@ -181,7 +171,145 @@ header {
 
     button {
         position: relative;
-        top: 90px;
+        bottom: -45px;
+    }
+}
+
+.third_page {
+    background-color: $background_yellow;
+    position: relative;
+    border-top: 10px solid $border_white;
+    padding-bottom: $space_between_boxes;
+    border-bottom-right-radius: 100px;
+
+    .quote_containerOne {
+        position: relative;
+        right: 0;
+        margin-top: $space_between_boxes;
+        background-color: $background_green;
+        margin-left: $space_between_boxes;
+        height: 312px;
+        border: 10px solid $border_white;
+        border-radius: 30px 0 0 30px;
+        border-right: 0;
+        @include flexCenterCenter(column);
+
+        .quote_start {
+            left: -45px;            
+        }
+
+        .quote_end {
+            right: -20px;
+        }
+
+        .quote_text {
+            position: relative;
+            width: 236px;
+            height: 180px;
+        }
+    }
+
+    .juice_container {
+        margin-top: $space_between_boxes;
+        position: relative;
+        height: 315px;
+        width: $box_width;
+        border: 10px solid $border_white;
+        border-left: 0;
+        border-radius: 0 30px 30px 0;
+        @include backgroundurl(
+        url(/images/toa-heftiba-juice.webp),
+        cover,
+        no-repeat,
+        center center);
+    }
+
+    .services_container {
+        margin-top: $space_between_boxes;
+        position: relative;
+        width: $box_width;
+        height: 281px;
+        background-color: $background_white;
+        @include flexCenterCenter(column);
+        border-radius: 0 30px 100px 0;
+
+        h2 {
+            margin: 0;
+            width: 253px;
+            height: 149px;
+        }
+
+    }
+    .services_curve {
+        transform: rotate(180deg);
+        width: 175px;
+        height: 136px;
+        @include backgroundurl(
+        url(/section-curve/curveLight.svg),
+        cover,
+        no-repeat,
+        center center);
+        position: absolute;
+        left: 0;
+        z-index: 1;
         
+    }
+    
+    .services_curve_dark {
+        transform: rotate(180deg);
+        width: 154px;
+        height: 120px;
+        @include backgroundurl(
+        url(/section-curve/curveSVG.svg),
+        cover,
+        no-repeat,
+        center center);
+        position: absolute;
+        left: 0;
+        bottom: -120px;
+    }
+}
+
+.grey_page {
+    position: relative;
+    @include flexCenterCenter(column);
+
+    .grey_page_text {
+        width: 271px;
+        height: 272px;
+        
+        p {
+            color: $text_dark;
+        }
+    }
+
+    .book_btns_container {
+        .btn_team {
+            width: 287px;
+            height: 254px;
+            border: 0;
+            background: transparent;
+            @include backgroundurl(
+                url(/services/Book-Our-Creative-Team.svg),
+                cover,
+                no-repeat,
+                center center);
+        }
+        
+        .btn_studio {
+            @include backgroundurl(
+            url(/services/Book-Our-Studio.svg),
+            cover,
+            no-repeat,                
+            center center);
+        }
+        
+        .btn_items {
+            @include backgroundurl(
+            url(/services/Rent-Interior-Items.svg),
+            cover,
+            no-repeat,
+            center center);
+        }
     }
 }
