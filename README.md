@@ -1,6 +1,11 @@
-### Studio Grace a design project
+## This project is in process
+
+# Studio Grace a design project
 
 We got an assignment in class to design a web application. We decided to create a site for Studio Grace.
+This repository is for me to by trial and error see what I can do. So this school project to start, is now my private play ground.
+
+
 
 ## About the design
 
