@@ -1,6 +1,11 @@
-### Studio Grace a design project
+## This project is in progress
+
+# Studio Grace a design project
 
 We got an assignment in class to design a web application. We decided to create a site for Studio Grace.
+This repository is for me to by trial and error see what I can do. So this school project to start, is now my private play ground.
+
+
 
 ## About the design
 
@@ -18,10 +23,15 @@ As a font we chose the font Inter which is pretty rounded and well suited for sc
 
 In our design layout we have attempted to create a natural flow between all elements, striving to implement images into our clear and distinct design and showcasing our business whilst still maintaining the aesthetic of our initial idea. We believe we have achieved the desired playfulness of our aesthetic, unveiling our brand identity.
 
-# Designed by
+### Designed by
 
 - [@tsemitris](https://github.com/tsemitris)
 - [@olandstorm](https://github.com/olandstorm)
 - [@alahojat](https://www.github.com/alahojat)
 - [@Annika-Nyholm](https://github.com/Annika-Nyholm)
+
+### Coded by
+
+- [@Annika-Nyholm](https://github.com/Annika-Nyholm)
+
 
