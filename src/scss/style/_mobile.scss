@@ -180,16 +180,11 @@ header {
     position: relative;
     border-top: 10px solid $border_white;
     padding-bottom: $space_between_boxes;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 120px;
 
-    .quote_containerOne {
-        position: relative;
-        right: 0;
-        margin-top: $space_between_boxes;
-        background-color: $background_green;
+    .quote_container_one {
         margin-left: $space_between_boxes;
         height: 312px;
-        border: 10px solid $border_white;
         border-radius: 30px 0 0 30px;
         border-right: 0;
         @include flexCenterCenter(column);
@@ -273,7 +268,8 @@ header {
 .grey_page {
     position: relative;
     @include flexCenterCenter(column);
-
+    padding-bottom: 90px;
+    
     .grey_page_text {
         width: 271px;
         height: 272px;
@@ -282,34 +278,100 @@ header {
             color: $text_dark;
         }
     }
+    
+    .booking_container {
+        //STUPID border and container BS!
+        width: 100%;
+        border-right: 10px solid $background_yellow;
+    }
 
-    .book_btns_container {
+    .book_btns_flex_container {
+        @include flexCenterCenter(column);
+        gap: $space_between_boxes;
+        
+
         .btn_team {
+            left: -20%;
             width: 287px;
-            height: 254px;
-            border: 0;
-            background: transparent;
+            height: 260px;
             @include backgroundurl(
-                url(/services/Book-Our-Creative-Team.svg),
-                cover,
-                no-repeat,
-                center center);
+            url(/services/Book-Our-Creative-Team.svg),
+            cover,
+            no-repeat,
+            center center);
         }
         
         .btn_studio {
+            width: 275px;
+            height: 210px;
             @include backgroundurl(
             url(/services/Book-Our-Studio.svg),
             cover,
             no-repeat,                
             center center);
-        }
+        } 
         
         .btn_items {
+            left: -15%;
+            width: 253px;
+            height: 210px;
             @include backgroundurl(
             url(/services/Rent-Interior-Items.svg),
             cover,
             no-repeat,
             center center);
+        }
+    }
+
+    .grey_page_curve_container {
+        width: 154px;
+        height: 120px;
+        @include backgroundurl(
+        url(/section-curve/curveSVG.svg),
+        cover,
+        no-repeat,
+        center center);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-right: 10px;
+        // STUPID border right
+    }
+
+}
+
+.contact_page {
+    background-color: $background_yellow;
+    position: relative;
+    border-bottom: 50px solid $border_white;
+    padding: 90px 0 60px 0;
+    border-top-left-radius: 120px;
+    
+    
+    
+    .quote_container_two {
+        height: 290px;
+        margin-left: $space_between_boxes;
+        border-radius: 30px 0 0 30px;
+        border-right: 0;
+        @include flexCenterCenter(column);
+        
+        p {
+            width: 260px;
+            height: 188px;
+        }
+    }
+
+    .quote_container_three {
+        height: 383px;
+        width: $box_width;
+        border-radius:  0 30px 30px 0;
+        border-left: 0;
+        @include flexCenterCenter(column);
+        
+        p {
+            width: 249px;
+            height: 283px;
         }
     }
 }

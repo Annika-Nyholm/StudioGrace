@@ -91,6 +91,13 @@ p {
     line-height: 1.875;
     letter-spacing: -0.8px;
 }
+.quote_container {
+    position: relative;
+    right: 0;
+    margin-top: $space_between_boxes;
+    background-color: $background_green;
+    border: 10px solid $border_white;
+}
 
 .quote_text {
     font-weight: 900;
@@ -117,6 +124,12 @@ input {
     border-radius: 16px;
     padding: 10px;
     border-radius: 16px;
+}
+
+.book_btn {
+    border: 0;
+    background: transparent;
+    position: relative;
 }
 
 .btn_primary {
