@@ -10,6 +10,7 @@ h5,
 h6,
 p,
 span,
+input,
 a {
     font-family: $font_type;
 }
@@ -102,6 +103,7 @@ p {
 .quote_text {
     font-weight: 900;
     font-size: 1.5rem;
+    line-height: 2rem;
     letter-spacing: -0.8px;
     font-style: italic;
 }
@@ -124,6 +126,30 @@ input {
     border-radius: 16px;
     padding: 10px;
     border-radius: 16px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.125px;
+    letter-spacing: -0.4px;
+    
+}
+
+::placeholder {
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    font-weight: 700;
+    color: $input_text_dark;
+}
+  
+*:active::placeholder {
+    color: $input_text_light;
+}
+
+input:active {
+    background-color: $input_bg_hoverfocus_dark;
+}
+input:focus {
+    background-color: $input_bg_hoverfocus_dark;
+    color: $input_text_light;
 }
 
 .book_btn {
