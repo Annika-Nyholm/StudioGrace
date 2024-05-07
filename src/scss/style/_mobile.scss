@@ -200,7 +200,7 @@ header {
         .quote_text {
             position: relative;
             width: 236px;
-            height: 180px;
+            height: 217px;
         }
     }
 
@@ -343,9 +343,8 @@ header {
 .contact_page {
     background-color: $background_yellow;
     position: relative;
-    border-bottom: 50px solid $border_white;
-    padding: 90px 0 60px 0;
-    border-top-left-radius: 120px;
+    padding-top: 65px;
+    border-top-left-radius: 140px; //curve eller border radius?
     
     
     
@@ -356,6 +355,14 @@ header {
         border-right: 0;
         @include flexCenterCenter(column);
         
+        .quote_start {
+            left: 24px;            
+        }
+
+        .quote_end {
+            right: 40px;
+        }
+
         p {
             width: 260px;
             height: 188px;
@@ -368,10 +375,44 @@ header {
         border-radius:  0 30px 30px 0;
         border-left: 0;
         @include flexCenterCenter(column);
+        margin-bottom: 60px;
         
+        .quote_start {
+            left: 24px;            
+        }
+
+        .quote_end {
+            right: 40px;
+        }
+
         p {
             width: 249px;
             height: 283px;
         }
     }
+
+    .contact_container {
+        background-image: 
+        url(/background-pattern/boxpattern.png);
+        background-blend-mode: overlay; 
+        background-repeat: repeat;
+        background-size: 30%;
+        border-top: 50px solid $border_white;
+        @include flexCenterCenter(column);
+        gap: 30px;
+        padding: 50px 0;
+
+        h2 {
+            position: relative;
+            left: -35px;
+            color: $h2_dark;
+            margin: 0;
+        }
+
+        
+    }
+}
+input {
+    width: 286px;
+    height: 40px;
 }
