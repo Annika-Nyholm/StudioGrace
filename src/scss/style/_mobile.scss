@@ -235,6 +235,7 @@ header {
         }
 
     }
+
     .services_curve {
         transform: rotate(180deg);
         width: 175px;
@@ -268,7 +269,9 @@ header {
 .grey_page {
     position: relative;
     @include flexCenterCenter(column);
-    padding-bottom: 90px;
+    padding: 40px 0 90px 0;
+    border-left: 6px solid $background_yellow;
+
     
     .grey_page_text {
         width: 271px;
@@ -280,16 +283,14 @@ header {
     }
     
     .booking_container {
-        //STUPID border and container BS!
+        padding-top: 60px;
         width: 100%;
-        border-right: 10px solid $background_yellow;
     }
-
+    
     .book_btns_flex_container {
         @include flexCenterCenter(column);
         gap: $space_between_boxes;
         
-
         .btn_team {
             left: -20%;
             width: 287px;
@@ -323,7 +324,23 @@ header {
         }
     }
 
-    .grey_page_curve_container {
+    // .grey_page_curve_container {
+    //     width: 154px;
+    //     height: 120px;
+    //     @include backgroundurl(
+    //     url(/section-curve/curveSVG.svg),
+    //     cover,
+    //     no-repeat,
+    //     center center);
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     transform: rotate(90deg);
+
+    // }
+    
+    .grey_page_curve_dark {
+        transform: rotate(90deg);
         width: 154px;
         height: 120px;
         @include backgroundurl(
@@ -332,66 +349,67 @@ header {
         no-repeat,
         center center);
         position: absolute;
-        bottom: 0;
-        right: 0;
-        border-right: 10px;
-        // STUPID border right
+        left: -18px;
+        bottom: 17px;
     }
-
 }
+
 
 .contact_page {
     background-color: $background_yellow;
     position: relative;
-    padding-top: 65px;
-    border-top-left-radius: 140px; //curve eller border radius?
+    padding-top: $space_between_boxes;
+    border-top-right-radius: 100px;
     
     
     
     .quote_container_two {
         height: 290px;
-        margin-left: $space_between_boxes;
-        border-radius: 30px 0 0 30px;
-        border-right: 0;
-        @include flexCenterCenter(column);
-        
-        .quote_start {
-            left: 24px;            
-        }
-
-        .quote_end {
-            right: 40px;
-        }
-
-        p {
-            width: 260px;
-            height: 188px;
-        }
-    }
-
-    .quote_container_three {
-        height: 383px;
         width: $box_width;
         border-radius:  0 30px 30px 0;
         border-left: 0;
         @include flexCenterCenter(column);
+        
+        .quote_start {
+            left: -40px;            
+        }
+        
+        .quote_end {
+            right: -24px;
+        }
+        
+        p {
+            position: relative;
+            width: 260px;
+            height: 188px;
+        }
+    }
+    
+    .quote_container_three {
+        margin-left: $space_between_boxes;
+        height: 383px;
+        border-right: 0;
+        border-radius: 30px 0 0 30px;
+        @include flexCenterCenter(column);
         margin-bottom: 60px;
         
         .quote_start {
-            left: 24px;            
+            left: -40px;            
         }
 
         .quote_end {
-            right: 40px;
+            right: -24px;
         }
 
         p {
+            position: relative;
             width: 249px;
             height: 283px;
         }
     }
 
     .contact_container {
+        position: relative;
         background-image: 
         url(/background-pattern/boxpattern.png);
         background-blend-mode: overlay; 
@@ -401,6 +419,15 @@ header {
         @include flexCenterCenter(column);
         gap: 30px;
         padding: 50px 0;
+
+        .lamp_container {
+            position: absolute;
+            z-index: 2;
+            right: 120px;
+            top: 60px;
+            width: 171px;
+            height: 145px;
+        }
 
         h2 {
             position: relative;
@@ -412,6 +439,7 @@ header {
         
     }
 }
+
 input {
     width: 286px;
     height: 40px;
